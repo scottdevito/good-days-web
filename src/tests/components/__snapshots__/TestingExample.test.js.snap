@@ -1,0 +1,44 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<div
+  className="sc-EHOje cLeeWa"
+>
+  <h1>
+    Testing
+  </h1>
+  <div
+    className="sc-ifAKCX eVrQyi"
+  >
+    <h2>
+      Resources:
+    </h2>
+    <h5>
+      Snapshot
+    </h5>
+    <a
+      href="https://jestjs.io/docs/en/snapshot-testing"
+    >
+      https://jestjs.io/docs/en/snapshot-testing
+    </a>
+    <a
+      href="https://www.youtube.com/watch?v=9liG4PuqKY0"
+    >
+      https://www.youtube.com/watch?v=9liG4PuqKY0
+    </a>
+    <h5>
+      Unit Tests
+    </h5>
+    <a
+      href="https://github.com/airbnb/enzyme"
+    >
+      https://github.com/airbnb/enzyme
+    </a>
+    <a
+      href="https://airbnb.io/enzyme/docs/installation/index.html"
+    >
+      https://airbnb.io/enzyme/docs/installation/index.html
+    </a>
+  </div>
+</div>
+`;

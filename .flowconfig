@@ -1,0 +1,19 @@
+[ignore]
+.*/node_modules/.*
+.*/src/serviceWorker\.js
+.*/src/index\.js
+.*/src/tests/.*
+.*/src/setupTests\.js
+# We vendor our src directory, which is not needed for type-checking
+.*/node_modules/styled-components/.*
+
+[include]
+
+[libs]
+
+[lints]
+
+[options]
+all=true
+
+[strict]

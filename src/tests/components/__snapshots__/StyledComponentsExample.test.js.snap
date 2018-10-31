@@ -1,0 +1,27 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<div
+  className="sc-ifAKCX idxgcQ"
+>
+  <div
+    className="sc-EHOje VdJQc"
+  >
+    <h1
+      className="sc-bZQynM bOrPFB"
+    >
+      Styled Components
+    </h1>
+    <ul>
+      <li>
+        Install styled components
+      </li>
+    </ul>
+    <button
+      className="sc-htpNat kRUzAD"
+    >
+      This is a reusable button
+    </button>
+  </div>
+</div>
+`;

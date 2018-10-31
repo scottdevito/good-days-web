@@ -1,0 +1,36 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<div
+  className="sc-EHOje enDNEB"
+>
+  <h1
+    className="sc-bZQynM bOrPFB"
+  >
+    Material UI
+  </h1>
+  <ul>
+    <li>
+      Install Material UI
+    </li>
+    <li>
+      Create .MUI.js component
+    </li>
+    <li>
+      Import .mui.js component into render method
+    </li>
+  </ul>
+  <div
+    className="sc-ifAKCX eVrQyi"
+  >
+    <h2>
+      Resources:
+    </h2>
+    <a
+      href="https://material-ui.com/demos/selects"
+    >
+      https://material-ui.com/demos/selects
+    </a>
+  </div>
+</div>
+`;

@@ -1,0 +1,36 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<div
+  className="sc-EHOje enDNEB"
+>
+  <h1>
+    Redux
+  </h1>
+  <ul>
+    <li>
+      npm i --save redux react-redux redux-promise redux-thunk
+    </li>
+    <li>
+      Add redux specific code into src/index.js
+    </li>
+  </ul>
+  <div
+    className="sc-ifAKCX eVrQyi"
+  >
+    <h2>
+      Resources:
+    </h2>
+    Some Resource
+  </div>
+  <h3>
+    Test Data Fetch Action:
+  </h3>
+  <button
+    className="sc-bxivhb iBHaDI"
+    onClick={[Function]}
+  >
+    Dispatch Redux Action
+  </button>
+</div>
+`;

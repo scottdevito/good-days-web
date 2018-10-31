@@ -1,0 +1,63 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<div
+  className="sc-EHOje enDNEB"
+>
+  <h1
+    className="sc-bZQynM bOrPFB"
+  >
+    Flow - static typing
+  </h1>
+  <img
+    alt="Flow uses example"
+    src="https://cdn-images-1.medium.com/max/1600/1*ulwmJZfctsdMiwO8HRFDKQ.png"
+  />
+  <div
+    className="sc-ifAKCX eVrQyi"
+  >
+    <h2>
+      Resources:
+    </h2>
+    <h5>
+      Flow setup with create-react-app
+    </h5>
+    <a
+      href="https://facebook.github.io/create-react-app/docs/adding-flow"
+    >
+      https://facebook.github.io/create-react-app/docs/adding-flow
+    </a>
+    <a
+      href="https://flow.org/en/docs/tools/create-react-app/"
+    >
+      https://flow.org/en/docs/tools/create-react-app/
+    </a>
+    <h5>
+      How to use Flow
+    </h5>
+    <a
+      href="https://youtu.be/dV8K6fsjDCQ"
+    >
+      https://youtu.be/dV8K6fsjDCQ
+    </a>
+    <a
+      href="https://youtu.be/L0nJTyHBTtE"
+    >
+      https://youtu.be/L0nJTyHBTtE
+    </a>
+    <h5>
+      Testing Redux and Flow
+    </h5>
+    <a
+      href="https://hackernoon.com/how-to-snapshot-test-everything-in-your-redux-app-with-jest-fde305ebedea"
+    >
+      https://hackernoon.com/how-to-snapshot-test-everything-in-your-redux-app-with-jest-fde305ebedea
+    </a>
+    <a
+      href="https://github.com/airbnb/enzyme/issues/1002"
+    >
+      https://github.com/airbnb/enzyme/issues/1002
+    </a>
+  </div>
+</div>
+`;
