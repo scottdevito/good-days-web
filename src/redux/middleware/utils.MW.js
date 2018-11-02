@@ -13,7 +13,7 @@ const logger = store => next => action => {
 
 const createMySocketMiddleware = storeAPI => {
   let connection = new signalR.HubConnectionBuilder()
-    .withUrl('http://localhost:54699/chatHub/')
+    .withUrl('https://localhost:44316/exampleHub/')
     .build();
 
   connection.start().catch(function(err) {
