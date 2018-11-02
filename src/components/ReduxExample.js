@@ -3,6 +3,7 @@ import styled from 'styled-components';
 
 import ResourcesHOC from './reusable/ResourcesHOC';
 import { Card, CTAPrimaryBlue } from '../reusable-styles/reusable-styles';
+import SignalRExample from './SignalRExample';
 
 class ReduxExample extends Component {
   handleActionClick = () => {
@@ -10,7 +11,7 @@ class ReduxExample extends Component {
   };
 
   render() {
-    const { exampleState } = this.props;
+    const { exampleState, signalRState } = this.props;
     let reduxExmapleSection = null;
 
     if (exampleState && exampleState !== []) {
@@ -31,6 +32,10 @@ class ReduxExample extends Component {
           Dispatch Redux Action
         </CTAPrimaryBlue>
         {reduxExmapleSection}
+        <SignalRExample
+          sendSocketMessage={this.props.sendSocketMessage}
+          message={signalRState.message}
+        />
       </ReduxExampleWrapper>
     );
   }

@@ -6,7 +6,6 @@ import StyledComponentsExample from './components/StyledComponentsExample';
 import TypesExample from './components/TypesExample';
 import TestingExample from './components/TestingExample';
 import ReduxExampleContainer from './redux/containers/ReduxExample.C';
-import LiveUpdateExample from './components/LiveUpdateExample';
 
 class App extends Component {
   render() {
@@ -17,7 +16,6 @@ class App extends Component {
         <TypesExample />
         <TestingExample />
         <ReduxExampleContainer />
-        <LiveUpdateExample />
       </AppWrapper>
     );
   }

@@ -43,10 +43,4 @@ const getAPIDataAsyncAwait = () => {
   };
 };
 
-const signal = () => {
-  return dispatch => {
-    dispatch({ type: 'SIGNALR' });
-  };
-};
-
-export { getAPIDataPromise, getAPIDataAsyncAwait, signal };
+export { getAPIDataPromise, getAPIDataAsyncAwait };

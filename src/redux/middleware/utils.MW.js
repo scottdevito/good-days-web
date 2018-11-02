@@ -1,4 +1,8 @@
-import * as SignalR from '@aspnet/signalr';
+import * as signalR from '@aspnet/signalr';
+import {
+  SEND_WEBSOCKET_MESSAGE,
+  SOCKET_MESSAGE_RECEIVED,
+} from '../actions/types.A';
 
 const logger = store => next => action => {
   console.error('***dispatching***', action);
@@ -7,26 +11,34 @@ const logger = store => next => action => {
   return result;
 };
 
-// const connection = new SignalR.HubConnectionBuilder()
-//   .withUrl('http://localhost:44334/signalr')
-//   .configureLogging(SignalR.LogLevel.Information)
-//   .build();
+const createMySocketMiddleware = storeAPI => {
+  let connection = new signalR.HubConnectionBuilder()
+    .withUrl('http://localhost:54699/chatHub/')
+    .build();
 
-// connection.start().catch(err => console.error(err.toString()));
+  connection.start().catch(function(err) {
+    return console.error(err.toString());
+  });
 
-export function signalRMiddleware(store: any) {
-  return (next: any) => (action: any) => {
-    // switch (action.type) {
-    //   case 'SIGNALR':
-    //     console.error('yo');
-    //     connection.invoke('Send').catch(err => console.error(err.toString()));
-    //     break;
-    //   default: {
-    //   }
-    // }
+  connection.on('ReceiveMessage', message => {
+    console.error('Received message: ', message);
+    storeAPI.dispatch({
+      type: SOCKET_MESSAGE_RECEIVED,
+      payload: message,
+    });
+  });
 
+  return next => action => {
+    if (action.type == SEND_WEBSOCKET_MESSAGE) {
+      connection
+        .invoke('SendMessage', action.payload, action.payload)
+        .catch(function(err) {
+          return console.error(err.toString());
+        });
+      return;
+    }
     return next(action);
   };
-}
+};
 
-export { logger };
+export { logger, createMySocketMiddleware };
