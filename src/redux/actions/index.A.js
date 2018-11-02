@@ -1,3 +1,3 @@
-import { getAPIDataPromise, getAPIDataAsyncAwait } from './example.A';
+import { getAPIDataPromise, getAPIDataAsyncAwait, signal } from './example.A';
 
-export { getAPIDataPromise, getAPIDataAsyncAwait };
+export { getAPIDataPromise, getAPIDataAsyncAwait, signal };

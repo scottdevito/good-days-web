@@ -1,6 +1,10 @@
 import { connect } from 'react-redux';
 import ReduxExample from '../../components/ReduxExample';
-import { getAPIDataPromise, getAPIDataAsyncAwait } from '../actions/index.A';
+import {
+  getAPIDataPromise,
+  getAPIDataAsyncAwait,
+  signal,
+} from '../actions/index.A';
 
 const mapStateToProps = state => {
   return {
@@ -11,6 +15,7 @@ const mapStateToProps = state => {
 const mapDispatchToProps = {
   getAPIDataPromise,
   getAPIDataAsyncAwait,
+  signal,
 };
 
 const ReduxExampleContainer = connect(
