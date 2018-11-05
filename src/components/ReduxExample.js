@@ -35,6 +35,7 @@ class ReduxExample extends Component {
         <SignalRExample
           sendSocketMessage={this.props.sendSocketMessage}
           message={signalRState.message}
+          notification={signalRState.notification}
         />
       </ReduxExampleWrapper>
     );

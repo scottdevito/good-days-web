@@ -11,15 +11,17 @@ class SignalRExample extends Component {
   }
 
   render() {
+    const { message, notification } = this.props;
     return (
       <SignalRExampleWrapper>
-        <div>
-          Send a SignalR Message. Note: This will only work while connected to
-          SignalR API.
-        </div>
+        <div>Send a SignalR Message.</div>
+        <i>Note: This will only work while connected to SignalR API.</i>
         <br />
-        <button onClick={this.handleClick.bind(this)}>press me</button>
-        <div>{`SignalR Message: ${this.props.message || ''}`}</div>
+        <button onClick={this.handleClick.bind(this)}>Send message</button>
+        <div>{`Response: ${message || ''}`}</div>
+        <br />
+        <div>{`Get all Inventory to recieve notification: ${notification ||
+          ''}`}</div>
       </SignalRExampleWrapper>
     );
   }
