@@ -25,3 +25,7 @@
 - simple react snippets
 - flow language support
 - vscode-styled-components
+
+## Chrome extensions
+
+- Redux devtools
