@@ -3,8 +3,9 @@ import styled from 'styled-components';
 import { Card } from '../reusable-styles/reusable-styles';
 import ResourcesHOC from './reusable/ResourcesHOC';
 
-class TestingExample extends Component {
-  state = {};
+type Props = {};
+
+class TestingExample extends Component<Props> {
   render() {
     return (
       <TestingExampleWrapper>

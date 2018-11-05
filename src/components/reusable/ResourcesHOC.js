@@ -1,8 +1,13 @@
-import React, { Component } from 'react';
+import * as React from 'react';
+import { Component } from 'react';
 import styled from 'styled-components';
 import { Card } from '../../reusable-styles/reusable-styles';
 
-class ResourcesHOC extends Component {
+type Props = {
+  children?: React.Node,
+};
+
+class ResourcesHOC extends Component<Props> {
   render() {
     return (
       <ResourcesHOCWrapper>

@@ -5,17 +5,27 @@ import ResourcesHOC from './reusable/ResourcesHOC';
 import { Card, CTAPrimaryBlue } from '../reusable-styles/reusable-styles';
 import SignalRExample from './SignalRExample';
 
-class ReduxExample extends Component {
+type Props = {
+  getAPIDataPromise: () => mixed,
+  exampleState?: {
+    userId: number,
+    id: number,
+    title: string,
+    completed: boolean,
+  },
+};
+
+class ReduxExample extends Component<Props> {
   handleActionClick = () => {
     this.props.getAPIDataPromise();
   };
 
   render() {
     const { exampleState, signalRState } = this.props;
-    let reduxExmapleSection = null;
+    let reduxExampleSection = null;
 
     if (exampleState && exampleState !== []) {
-      reduxExmapleSection = `Data: ${exampleState.title}`;
+      reduxExampleSection = `Data: ${exampleState.title}`;
     }
 
     return (
@@ -31,7 +41,7 @@ class ReduxExample extends Component {
         <CTAPrimaryBlue onClick={() => this.handleActionClick()}>
           Dispatch Redux Action
         </CTAPrimaryBlue>
-        {reduxExmapleSection}
+        {reduxExampleSection}
         <SignalRExample
           sendSocketMessage={this.props.sendSocketMessage}
           message={signalRState.message}

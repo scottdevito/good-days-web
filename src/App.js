@@ -7,7 +7,9 @@ import TypesExample from './components/TypesExample';
 import TestingExample from './components/TestingExample';
 import ReduxExampleContainer from './redux/containers/ReduxExample.C';
 
-class App extends Component {
+type Props = {};
+
+class App extends Component<Props> {
   render() {
     return (
       <AppWrapper>

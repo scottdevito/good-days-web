@@ -2,11 +2,11 @@ import React, { Component } from 'react';
 import styled from 'styled-components';
 import { CTAPrimaryRed, Card } from '../reusable-styles/reusable-styles';
 
-class StyledComponentsExample extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {};
-  }
+type Props = {
+  colorProp?: string,
+};
+
+class StyledComponentsExample extends Component<Props> {
   render() {
     return (
       <StyledComponentsWrapper>
