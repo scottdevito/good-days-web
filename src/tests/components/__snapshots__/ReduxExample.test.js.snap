@@ -2,7 +2,7 @@
 
 exports[`renders correctly 1`] = `
 <div
-  className="sc-EHOje enDNEB"
+  className="sc-bZQynM dETavn"
 >
   <h1>
     Redux
@@ -32,5 +32,28 @@ exports[`renders correctly 1`] = `
   >
     Dispatch Redux Action
   </button>
+  <div
+    className="sc-EHOje enDNEB"
+  >
+    <div>
+      Send a SignalR Message.
+    </div>
+    <i>
+      Note: This will only work while connected to SignalR API.
+    </i>
+    <br />
+    <button
+      onClick={[Function]}
+    >
+      Send message
+    </button>
+    <div>
+      Response: no signal yet
+    </div>
+    <br />
+    <div>
+      Get all Inventory to recieve notification: no message yet
+    </div>
+  </div>
 </div>
 `;

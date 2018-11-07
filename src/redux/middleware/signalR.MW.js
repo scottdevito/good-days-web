@@ -3,7 +3,7 @@ import {
   SEND_WEBSOCKET_MESSAGE,
   SOCKET_MESSAGE_RECEIVED,
   SOCKET_NOTIFICATION_RECEIVED,
-} from '../actions/types.A';
+} from '../../constants/ActionTypes';
 
 const createMySocketMiddleware = storeAPI => {
   // Start connection and register listeners - This only happens once on app startup.

@@ -1,7 +1,7 @@
 import {
   SOCKET_MESSAGE_RECEIVED,
   SOCKET_NOTIFICATION_RECEIVED,
-} from '../actions/types.A';
+} from '../../constants/ActionTypes';
 
 export default function(state = [], action) {
   switch (action.type) {
