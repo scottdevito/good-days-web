@@ -1,3 +1,4 @@
+// @flow
 import React from 'react';
 import styled from 'styled-components';
 import { Link } from 'react-router-dom';
@@ -25,4 +26,5 @@ const NoMatchWrapper = styled.div`
   align-items: center;
   height: 100%;
   width: 100%;
+  min-height: 90vh;
 `;

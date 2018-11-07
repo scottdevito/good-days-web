@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
 
-import { Card, CTAPrimaryBlue } from '../reusable-styles/reusable-styles';
+import { Card } from '../reusable-styles/reusable-styles';
 
 class SignalRExample extends Component {
   state = {};

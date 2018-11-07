@@ -31,7 +31,7 @@ const createMySocketMiddleware = storeAPI => {
 
   // Set up Middleware that handles actions before they reach the reducer.
   return next => action => {
-    if (action.type == SEND_WEBSOCKET_MESSAGE) {
+    if (action.type === SEND_WEBSOCKET_MESSAGE) {
       connection
         .invoke('SendMessage', action.payload, action.payload)
         .catch(function(err) {
