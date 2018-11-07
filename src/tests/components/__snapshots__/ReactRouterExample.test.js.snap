@@ -1,0 +1,36 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<div
+  className="sc-EHOje enDNEB"
+>
+  <h1>
+    React Router
+  </h1>
+  <div
+    className="sc-ifAKCX eVrQyi"
+  >
+    <h2>
+      Resources:
+    </h2>
+    <a
+      href="https://reacttraining.com/react-router/web/guides/quick-start"
+    >
+      https://reacttraining.com/react-router/web/guides/quick-start
+    </a>
+  </div>
+  <h4>
+    Test routing:
+  </h4>
+  <a
+    href="/react-router-test"
+    onClick={[Function]}
+  >
+    <button
+      className="sc-bxivhb iBHaDI"
+    >
+      Some Link
+    </button>
+  </a>
+</div>
+`;

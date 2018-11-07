@@ -6,6 +6,7 @@ import StyledComponentsExample from '../components/StyledComponentsExample';
 import TypesExample from '../components/TypesExample';
 import TestingExample from '../components/TestingExample';
 import ReduxExampleContainer from '../redux/containers/ReduxExample.C';
+import ReactRouterExample from '../components/ReactRouterExample';
 
 const TechnologiesScreen = () => {
   return (
@@ -15,6 +16,7 @@ const TechnologiesScreen = () => {
       <TypesExample />
       <TestingExample />
       <ReduxExampleContainer />
+      <ReactRouterExample />
     </TechnologiesScreenWrapper>
   );
 };
