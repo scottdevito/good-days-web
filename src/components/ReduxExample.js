@@ -1,3 +1,4 @@
+// @flow
 import React, { Component } from 'react';
 import styled from 'styled-components';
 
@@ -13,9 +14,19 @@ type Props = {
     title: string,
     completed: boolean,
   },
+  signalRState: {
+    message: string,
+    notification: string,
+  },
+  sendSocketMessage: () => mixed,
 };
 
 class ReduxExample extends Component<Props> {
+  static defaultProps = {
+    exampleState: undefined,
+    signalRState: { message: 'no signal yet', notification: 'no message yet' },
+  };
+
   handleActionClick = () => {
     this.props.getAPIDataPromise();
   };
