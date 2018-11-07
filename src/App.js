@@ -3,6 +3,7 @@ import styled from 'styled-components';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 
 import NoMatch from './components/NoMatch';
+import AppBarNav from './components/reusable/AppBarNav.MUI';
 import TechnologiesScreen from './screens/TechnologiesScreen';
 
 type Props = {};
@@ -12,6 +13,7 @@ class App extends Component<Props> {
     return (
       <Router>
         <AppWrapper>
+          <AppBarNav />
           <Switch>
             <Route path="/" exact component={TechnologiesScreen} />
             <Route component={NoMatch} />
@@ -31,6 +33,5 @@ const AppWrapper = styled.div`
   align-items: center;
   flex-wrap: wrap;
   height: 100%;
-  min-height: 100vh;
   width: 100%;
 `;
