@@ -4,23 +4,13 @@ import styled from 'styled-components';
 import { Link } from 'react-router-dom';
 
 import { CTAPrimaryRed } from '../reusable-styles/reusable-styles';
+import type { RouterLocation } from '../constants/FlowTypes';
 
-type Props = {
-  location: {
-    hash?: string,
-    key: string,
-    pathname: string,
-    search?: string,
-    state?: any,
-  },
-};
-
-const NoMatch = ({ location }: Props) => {
+const NoMatch = ({ location }: RouterLocation) => {
   return (
     <NoMatchWrapper>
       <h3>404</h3>
       <p>No route found at route: {location.pathname}</p>
-      {console.log(location)}
       <Link to="/">
         <CTAPrimaryRed>Home</CTAPrimaryRed>
       </Link>

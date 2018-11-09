@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import styled from 'styled-components';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 
-import NoMatch from './components/NoMatch';
+import NoMatchScreen from './screens/NoMatchScreen';
 import AppBarNav from './components/reusable/AppBarNav.MUI';
 import TechnologiesScreen from './screens/TechnologiesScreen';
 
@@ -16,7 +16,7 @@ class App extends Component<Props> {
           <AppBarNav />
           <Switch>
             <Route path="/" exact component={TechnologiesScreen} />
-            <Route component={NoMatch} />
+            <Route component={NoMatchScreen} />
           </Switch>
         </AppWrapper>
       </Router>
