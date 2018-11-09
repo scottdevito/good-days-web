@@ -2,17 +2,19 @@
 
 exports[`renders correctly 1`] = `
 <div
-  className="sc-EHOje enDNEB"
+  className="sc-bZQynM cZVOIA"
 >
   <h1>
     React Router
   </h1>
   <div
-    className="sc-ifAKCX eVrQyi"
+    className="sc-ifAKCX sPqpe"
   >
-    <h2>
+    <h3
+      className="sc-EHOje ffdZoo"
+    >
       Resources:
-    </h2>
+    </h3>
     <a
       href="https://reacttraining.com/react-router/web/guides/quick-start"
     >

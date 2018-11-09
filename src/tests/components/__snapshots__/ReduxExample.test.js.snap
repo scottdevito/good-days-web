@@ -2,26 +2,24 @@
 
 exports[`renders correctly 1`] = `
 <div
-  className="sc-bZQynM dETavn"
+  className="sc-gzVnrw hsbscI"
 >
   <h1>
     Redux
   </h1>
-  <ul>
-    <li>
-      npm i --save redux react-redux redux-promise redux-thunk
-    </li>
-    <li>
-      Add redux specific code into src/index.js
-    </li>
-  </ul>
   <div
-    className="sc-ifAKCX eVrQyi"
+    className="sc-ifAKCX sPqpe"
   >
-    <h2>
+    <h3
+      className="sc-EHOje ffdZoo"
+    >
       Resources:
-    </h2>
-    Some Resource
+    </h3>
+    <a
+      href="https://redux.js.org/"
+    >
+      https://redux.js.org/
+    </a>
   </div>
   <h3>
     Test Data Fetch Action:
@@ -33,7 +31,7 @@ exports[`renders correctly 1`] = `
     Dispatch Redux Action
   </button>
   <div
-    className="sc-EHOje enDNEB"
+    className="sc-bZQynM cZVOIA"
   >
     <div>
       Send a SignalR Message.

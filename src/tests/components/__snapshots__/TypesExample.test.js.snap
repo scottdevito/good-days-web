@@ -2,10 +2,10 @@
 
 exports[`renders correctly 1`] = `
 <div
-  className="sc-EHOje enDNEB"
+  className="sc-bZQynM cZVOIA"
 >
   <h1
-    className="sc-bZQynM bOrPFB"
+    className="sc-gzVnrw ibZhkv"
   >
     Flow - static typing
   </h1>
@@ -14,11 +14,13 @@ exports[`renders correctly 1`] = `
     src="https://cdn-images-1.medium.com/max/1600/1*ulwmJZfctsdMiwO8HRFDKQ.png"
   />
   <div
-    className="sc-ifAKCX eVrQyi"
+    className="sc-ifAKCX sPqpe"
   >
-    <h2>
+    <h3
+      className="sc-EHOje ffdZoo"
+    >
       Resources:
-    </h2>
+    </h3>
     <h5>
       Flow setup with create-react-app
     </h5>

@@ -2,17 +2,19 @@
 
 exports[`renders correctly 1`] = `
 <div
-  className="sc-EHOje cLeeWa"
+  className="sc-bZQynM bXetM"
 >
   <h1>
     Testing
   </h1>
   <div
-    className="sc-ifAKCX eVrQyi"
+    className="sc-ifAKCX sPqpe"
   >
-    <h2>
+    <h3
+      className="sc-EHOje ffdZoo"
+    >
       Resources:
-    </h2>
+    </h3>
     <h5>
       Snapshot
     </h5>

@@ -2,10 +2,10 @@
 
 exports[`renders correctly 1`] = `
 <div
-  className="sc-EHOje enDNEB"
+  className="sc-bZQynM cZVOIA"
 >
   <h1
-    className="sc-bZQynM bOrPFB"
+    className="sc-gzVnrw ibZhkv"
   >
     Material UI
   </h1>
@@ -21,11 +21,13 @@ exports[`renders correctly 1`] = `
     </li>
   </ul>
   <div
-    className="sc-ifAKCX eVrQyi"
+    className="sc-ifAKCX sPqpe"
   >
-    <h2>
+    <h3
+      className="sc-EHOje ffdZoo"
+    >
       Resources:
-    </h2>
+    </h3>
     <a
       href="https://material-ui.com/demos/selects"
     >

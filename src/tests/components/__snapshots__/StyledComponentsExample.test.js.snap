@@ -2,21 +2,30 @@
 
 exports[`renders correctly 1`] = `
 <div
-  className="sc-ifAKCX idxgcQ"
+  className="sc-bZQynM hnHuKh"
 >
   <div
-    className="sc-EHOje VdJQc"
+    className="sc-gzVnrw dkvrNP"
   >
     <h1
-      className="sc-bZQynM bOrPFB"
+      className="sc-htoDjs bZzhDu"
     >
       Styled Components
     </h1>
-    <ul>
-      <li>
-        Install styled components
-      </li>
-    </ul>
+    <div
+      className="sc-ifAKCX sPqpe"
+    >
+      <h3
+        className="sc-EHOje ffdZoo"
+      >
+        Resources:
+      </h3>
+      <a
+        href="https://www.styled-components.com/docs/basics"
+      >
+        https://www.styled-components.com/docs/basics
+      </a>
+    </div>
     <button
       className="sc-htpNat kRUzAD"
     >
