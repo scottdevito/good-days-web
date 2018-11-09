@@ -29,13 +29,6 @@ class TypesExample extends Component<{}> {
           <a href="https://youtu.be/L0nJTyHBTtE">
             https://youtu.be/L0nJTyHBTtE
           </a>
-          <h5>Testing Redux and Flow</h5>
-          <a href="https://hackernoon.com/how-to-snapshot-test-everything-in-your-redux-app-with-jest-fde305ebedea">
-            https://hackernoon.com/how-to-snapshot-test-everything-in-your-redux-app-with-jest-fde305ebedea
-          </a>
-          <a href="https://github.com/airbnb/enzyme/issues/1002">
-            https://github.com/airbnb/enzyme/issues/1002
-          </a>
         </ResourcesHOC>
       </TypesExampleWrapper>
     );
