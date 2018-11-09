@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom';
 import renderer from 'react-test-renderer';
 import { shallow, mount, render } from 'enzyme';
 
-import TypesExample from '../../components/TypesExample';
+import TypesExample from '../../components/technologies-screen/TypesExample';
 
 // Snapshot test
 it('renders correctly', () => {

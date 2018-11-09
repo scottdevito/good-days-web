@@ -3,8 +3,8 @@ import React from 'react';
 import styled from 'styled-components';
 import { Link } from 'react-router-dom';
 
-import { Card, CTAPrimaryBlue } from '../reusable-styles/reusable-styles';
-import ResourcesHOC from './reusable/ResourcesHOC';
+import { Card, CTAPrimaryBlue } from '../../reusable-styles/reusable-styles';
+import ResourcesHOC from '../reusable/ResourcesHOC';
 
 const ReactRouterExample = () => {
   return (

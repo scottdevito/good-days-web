@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom';
 import renderer from 'react-test-renderer';
 import { shallow, mount, render } from 'enzyme';
 
-import MaterialUIExample from '../../components/MaterialUIExample';
+import MaterialUIExample from '../../components/technologies-screen/MaterialUIExample';
 
 // Snapshot test
 it('renders correctly', () => {

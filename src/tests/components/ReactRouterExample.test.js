@@ -4,7 +4,7 @@ import renderer from 'react-test-renderer';
 import { shallow, mount, render } from 'enzyme';
 import { BrowserRouter as Router } from 'react-router-dom';
 
-import ReactRouterExample from '../../components/ReactRouterExample';
+import ReactRouterExample from '../../components/technologies-screen/ReactRouterExample';
 
 // Snapshot test
 it('renders correctly', () => {

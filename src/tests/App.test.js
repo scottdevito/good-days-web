@@ -4,7 +4,7 @@ import App from '../App';
 import renderer from 'react-test-renderer';
 import { shallow, mount, render } from 'enzyme';
 
-import TestingExample from '../components/TestingExample';
+import TestingExample from '../components/technologies-screen/TestingExample';
 
 // Create snapshot tests at feature level
 // it('renders correctly', () => {

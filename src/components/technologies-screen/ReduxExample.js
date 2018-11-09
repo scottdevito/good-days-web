@@ -2,8 +2,8 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
 
-import ResourcesHOC from './reusable/ResourcesHOC';
-import { Card, CTAPrimaryBlue } from '../reusable-styles/reusable-styles';
+import ResourcesHOC from '../reusable/ResourcesHOC';
+import { Card, CTAPrimaryBlue } from '../../reusable-styles/reusable-styles';
 import SignalRExample from './SignalRExample';
 
 type Props = {

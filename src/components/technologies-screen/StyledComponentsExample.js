@@ -1,8 +1,8 @@
 // @flow
 import React, { Component } from 'react';
 import styled from 'styled-components';
-import { CTAPrimaryRed, Card } from '../reusable-styles/reusable-styles';
-import ResourcesHOC from './reusable/ResourcesHOC';
+import { CTAPrimaryRed, Card } from '../../reusable-styles/reusable-styles';
+import ResourcesHOC from '../reusable/ResourcesHOC';
 
 type Props = {
   colorProp?: string,

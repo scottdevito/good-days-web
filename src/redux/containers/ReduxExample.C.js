@@ -1,5 +1,5 @@
 import { connect } from 'react-redux';
-import ReduxExample from '../../components/ReduxExample';
+import ReduxExample from '../../components/technologies-screen/ReduxExample';
 import { getAPIDataPromise, sendSocketMessage } from '../actions/index.A';
 
 const mapStateToProps = state => {

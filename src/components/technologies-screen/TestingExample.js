@@ -2,8 +2,8 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
 
-import { Card } from '../reusable-styles/reusable-styles';
-import ResourcesHOC from './reusable/ResourcesHOC';
+import { Card } from '../../reusable-styles/reusable-styles';
+import ResourcesHOC from '../reusable/ResourcesHOC';
 
 type Props = {};
 
