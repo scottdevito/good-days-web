@@ -12,7 +12,7 @@ class ResourcesHOC extends Component<Props> {
   render() {
     return (
       <ResourcesHOCWrapper>
-        <h2>Resources:</h2>
+        <ResourcesHeader>Resources:</ResourcesHeader>
         {this.props.children}
       </ResourcesHOCWrapper>
     );
@@ -28,9 +28,14 @@ const ResourcesHOCWrapper = styled(Card)`
   align-items: center;
   border-left: 8px solid #c1a1c3;
   border-radius: 6px;
-  padding: 2rem 1rem;
+  padding: 1.5rem 1rem;
   background-color: #fff;
   max-width: 60%;
   word-break: break-all;
   text-align: center;
+  color: #000;
+`;
+
+const ResourcesHeader = styled.h3`
+  margin: 0 0 1rem 0;
 `;

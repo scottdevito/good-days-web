@@ -42,11 +42,9 @@ class ReduxExample extends Component<Props> {
     return (
       <ReduxExampleWrapper>
         <h1>Redux</h1>
-        <ul>
-          <li>npm i --save redux react-redux redux-promise redux-thunk</li>
-          <li>Add redux specific code into src/index.js</li>
-        </ul>
-        <ResourcesHOC>Some Resource</ResourcesHOC>
+        <ResourcesHOC>
+          <a href="https://redux.js.org/">https://redux.js.org/</a>
+        </ResourcesHOC>
 
         <h3>Test Data Fetch Action:</h3>
         <CTAPrimaryBlue onClick={() => this.handleActionClick()}>

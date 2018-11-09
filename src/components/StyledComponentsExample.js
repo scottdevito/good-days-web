@@ -2,6 +2,7 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
 import { CTAPrimaryRed, Card } from '../reusable-styles/reusable-styles';
+import ResourcesHOC from './reusable/ResourcesHOC';
 
 type Props = {
   colorProp?: string,
@@ -15,9 +16,11 @@ class StyledComponentsExample extends Component<Props> {
           <StyledComponentsExampleHeader>
             Styled Components
           </StyledComponentsExampleHeader>
-          <ul>
-            <li>Install styled components</li>
-          </ul>
+          <ResourcesHOC>
+            <a href="https://www.styled-components.com/docs/basics">
+              https://www.styled-components.com/docs/basics
+            </a>
+          </ResourcesHOC>
           <CTAPrimaryRed>This is a reusable button</CTAPrimaryRed>
         </Box>
       </StyledComponentsWrapper>
