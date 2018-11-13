@@ -11,6 +11,11 @@ import thunk from 'redux-thunk';
 import reducers from './redux/reducers/index.R';
 // import { logger } from './redux/middleware/utils.MW';
 import { createMySocketMiddleware } from './redux/middleware/signalR.MW';
+import * as Sentry from '@sentry/browser';
+
+Sentry.init({
+  dsn: 'PLACE DSN HERE',
+});
 
 const composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
 const store = createStore(
