@@ -13,7 +13,7 @@ exports[`renders correctly 1`] = `
       <h6
         className="MuiTypography-root-42 MuiTypography-h6-59 MuiTypography-colorInherit-71"
       >
-        AVI React Starter
+        Community Garden Tools
       </h6>
     </div>
   </header>
