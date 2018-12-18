@@ -33,6 +33,6 @@ const AppWrapper = styled.div`
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  height: 100%;
+  height: 100vh;
   width: 100%;
 `;
