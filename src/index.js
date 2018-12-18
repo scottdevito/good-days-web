@@ -10,7 +10,7 @@ import promiseMiddleware from 'redux-promise';
 import thunk from 'redux-thunk';
 import reducers from './redux/reducers/index.R';
 // import { logger } from './redux/middleware/utils.MW';
-import { createMySocketMiddleware } from './redux/middleware/signalR.MW';
+// import { createMySocketMiddleware } from './redux/middleware/signalR.MW';
 // import * as Sentry from '@sentry/browser';
 
 // Sentry.init({
@@ -20,9 +20,7 @@ import { createMySocketMiddleware } from './redux/middleware/signalR.MW';
 const composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
 const store = createStore(
   reducers,
-  composeEnhancers(
-    applyMiddleware(thunk, promiseMiddleware, createMySocketMiddleware)
-  )
+  composeEnhancers(applyMiddleware(thunk, promiseMiddleware))
 );
 
 ReactDOM.render(

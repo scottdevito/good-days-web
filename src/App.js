@@ -4,8 +4,8 @@ import styled from 'styled-components';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 
 import NoMatchScreen from './screens/NoMatchScreen';
-import AppBarNav from './components/reusable/AppBarNav.MUI';
-import TechnologiesScreen from './screens/TechnologiesScreen';
+// import AppBarNav from './components/reusable/AppBarNav.MUI';
+import WelcomeScreen from './screens/WelcomeScreen';
 
 type Props = {};
 
@@ -14,9 +14,9 @@ class App extends Component<Props> {
     return (
       <Router>
         <AppWrapper>
-          <AppBarNav />
+          {/* <AppBarNav /> */}
           <Switch>
-            <Route path="/" exact component={TechnologiesScreen} />
+            <Route path="/" exact component={WelcomeScreen} />
             <Route component={NoMatchScreen} />
           </Switch>
         </AppWrapper>

@@ -4,23 +4,17 @@ import App from '../App';
 import renderer from 'react-test-renderer';
 import { shallow, mount, render } from 'enzyme';
 
-import TestingExample from '../components/technologies-screen/TestingExample';
-
 // Create snapshot tests at feature level
-// it('renders correctly', () => {
-//   const tree = renderer.create(<ReduxExample />).toJSON();
-//   expect(tree).toMatchSnapshot();
-// });
 
 // Unit tests
 it('renders without crashing', () => {
   shallow(<App />).dive();
 });
 
-it('renders one h1 tag', () => {
-  const wrapper = shallow(<TestingExample />);
-  expect(wrapper.find('h1')).toHaveLength(1);
-});
+// it('renders one h1 tag', () => {
+//   const wrapper = shallow(<TestingExample />);
+//   expect(wrapper.find('h1')).toHaveLength(1);
+// });
 
 // describe('<TestingExample />', () => {
 //   it('renders two <a> tags', () => {
