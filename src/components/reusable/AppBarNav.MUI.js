@@ -9,7 +9,6 @@ import Typography from '@material-ui/core/Typography';
 import type { RouterLocation } from '../../constants/FlowTypes';
 
 type Props = {
-  location: RouterLocation,
   classes: Object,
 };
 
@@ -26,7 +25,6 @@ const styles = {
 
 function AppBarNav(props: Props) {
   const { classes } = props;
-  console.log(props.location);
 
   return (
     <div className={classes.root}>
