@@ -6,6 +6,7 @@
     "@aspnet/signalr": "^1.0.4",
     "@material-ui/core": "^3.4.0",
     "@sentry/browser": "^4.3.0",
+    "gsap": "^2.0.2",
     "react": "^16.6.0",
     "react-dom": "^16.6.0",
     "react-redux": "^5.1.0",
