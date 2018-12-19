@@ -40,4 +40,24 @@ const CTAPrimaryBlue = styled(CTAPrimary)`
   }
 `;
 
-export { Card, CTAPrimary, CTAPrimaryRed, CTAPrimaryBlue };
+const CTAGreen = styled.button`
+  border-radius: 8px;
+  border: 2px solid #fff;
+  background-color: rgba(255, 255, 255, 0);
+  padding: 10px 20px 10px 20px;
+  color: #fff;
+  font-weight: 500;
+  transition: background-color 0.4s ease-in-out;
+  margin: 6rem 1rem 0.5rem 1rem;
+  font-size: 18px;
+  &:hover {
+    background: rgba(255, 255, 255, 1);
+    cursor: pointer;
+    color: #97b498;
+  }
+  &:focus {
+    outline: none;
+  }
+`;
+
+export { Card, CTAPrimary, CTAPrimaryRed, CTAPrimaryBlue, CTAGreen };

@@ -5,6 +5,7 @@ import { TimelineLite, TweenLite, Bounce, Expo } from 'gsap/all';
 
 import WelcomeSVG from '../assets/welcome-screen/WelcomeScreenGraphic.svg';
 import SunSVG from '../assets/welcome-screen/Sun.svg';
+import { CTAGreen } from '../reusable-styles/reusable-styles';
 
 class WelcomeScreen extends Component {
   constructor(props) {
@@ -14,6 +15,7 @@ class WelcomeScreen extends Component {
     this.headerTweenWrapper = null;
     this.sunTweenWrapper = null;
     this.grassTweenWrapper = null;
+    this.CTATweenWrapper = null;
   }
 
   componentDidMount = () => {
@@ -48,6 +50,13 @@ class WelcomeScreen extends Component {
           delay: 0.8,
         }),
         0
+      )
+      .add(
+        TweenLite.to(this.CTATweenWrapper, 2.4, {
+          autoAlpha: 1,
+          ease: Expo.easeInOut,
+        }),
+        4.6
       );
   };
 
@@ -66,7 +75,11 @@ class WelcomeScreen extends Component {
           />
           <WelcomeGraphicWrapper src={WelcomeSVG} alt="Welcome Graphic" />
         </SkyWrapper>
-        <GrassWrapper ref={div => (this.grassTweenWrapper = div)} />
+        <GrassWrapper ref={div => (this.grassTweenWrapper = div)}>
+          <StyledCTAGreen ref={button => (this.CTATweenWrapper = button)}>
+            Get Started
+          </StyledCTAGreen>
+        </GrassWrapper>
       </WelcomeScreenWrapper>
     );
   }
@@ -111,7 +124,7 @@ const SkyWrapper = styled.div`
 const GrassWrapper = styled.div`
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   height: 30vh;
   width: 100%;
@@ -150,4 +163,9 @@ const SunGraphicWrapper = styled.img`
     bottom: 54vh;
     width: 7%;
   }
+`;
+
+const StyledCTAGreen = styled(CTAGreen)`
+  visibility: hidden;
+  opacity: 0;
 `;
